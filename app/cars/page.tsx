@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../components/cards/Card";
 import { Car } from "../lib/types/types";
 
-type Props = {};
+
 
 const cars: Car[] = [
     {
@@ -53,12 +53,12 @@ const cars: Car[] = [
 ];
 
 
-export default function page({ }: Props) {
+export default function Page() {
     return (
         <div>
             <h1>Cars</h1>
-            {cars.map((car: Car) => (
-                <Card car={car} />
+            {cars.map((car: Car, index) => (
+                <Card key={index} car={car} />
             ))}
         </div>
     )

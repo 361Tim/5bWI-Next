@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
 
-export default function page({ }: Props) {
+
+export default function Page() {
+
     return <div>Trucks
         <Link href={"/"}>Go to root </Link>
     </div>
