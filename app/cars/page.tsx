@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Card from "../components/cards/Card";
 import { Car } from "../lib/types/types";
